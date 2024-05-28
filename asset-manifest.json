@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CalculadoraReact/static/css/main.8905da04.css",
+    "main.js": "/CalculadoraReact/static/js/main.a0c9cff0.js",
+    "index.html": "/CalculadoraReact/index.html",
+    "main.8905da04.css.map": "/CalculadoraReact/static/css/main.8905da04.css.map",
+    "main.a0c9cff0.js.map": "/CalculadoraReact/static/js/main.a0c9cff0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8905da04.css",
+    "static/js/main.a0c9cff0.js"
+  ]
+}
