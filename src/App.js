@@ -24,7 +24,9 @@ function App() {
     if (input === ''){
       return;
     }
-    setInput(evaluate(input));
+    const result = evaluate(input);
+    const roundedResult = Math.round(result,4);
+    setInput(roundedResult);
   }
 
 
