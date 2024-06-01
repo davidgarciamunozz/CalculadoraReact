@@ -20,15 +20,30 @@ function App() {
     setInput('');
   }
 
-  const calcular = () => {
-    if (input === ''){
-      return;
-    }
-    const result = evaluate(input);
-    const roundedResult = Math.round(result,4);
-    setInput(roundedResult);
-  }
+  // const calcular = () => {
+  //   if (input === ''){
+  //     return;
+  //   }
+  //   const result = evaluate(input);
+  //   //evaluar si la expresión matemática es válida
+  //   if (result === undefined){
+  //     setInput('Error');
+  //     return;
+  //   }
+  //   const roundedResult = Math.round(result,4);
+  //   setInput(roundedResult);
+  // }
 
+  //hacer una funcion que calcule el resultado de la operación matemática y si hay un error, mostrar un mensaje de error en el input
+  function calcular() {
+    try {
+      const result = evaluate(input);
+      const roundedResult = Math.round(result,4);
+      setInput(roundedResult);
+    } catch (error) {
+      setInput('Error');
+    }
+  }
 
   return (
     <div className="App">
